@@ -3,7 +3,7 @@ const mongoose=require('mongoose')
 const url=process.env.PRODUCTDB_URI
 
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{
-    console.log("connected to mongodb: url",url)
+    console.log("connected to mongodb: url")
 })
 
 const productSchema=new mongoose.Schema({
